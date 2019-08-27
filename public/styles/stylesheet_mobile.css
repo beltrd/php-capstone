@@ -1,0 +1,878 @@
+/*
+|||||||||||||||||||||||||||||||||||||
+||    HTML/CSS Capstone Project    ||
+\\         Grandma Cooks           //
+ \\         WDD - 2018            //
+  \\    Author: Diego Beltran    //
+   \\                           //
+   ||     (\(\         /)/)     ||
+   ||     (-.-)       (-.-)     ||
+   ||     o_(")(") (")(")_o     ||
+|||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||
+*/
+/*style sheet for Mobile*/
+
+/*slide show animation*/
+@keyframes slideit{
+  0% { left: 0; }
+	16.66% { left: 0; }
+	33.33% { left: -100% }
+	50% { left: -100% }
+	66.66% { left: -100% }
+	83.33% { left: -200%; }
+	100% { left: -200%; }
+}
+
+
+body{
+  box-sizing: border-box;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	background: linear-gradient(#f9f9f9 1%, #ededed 100%);
+	background-color: #f9f9f9;
+	background: #000;
+}
+svg{
+	fill: #fff;
+	stroke: #000;
+	stroke-width: 1px;
+	width: 70px;
+}
+#wrapper{
+  margin: 0 auto;
+	width: 100%;
+}
+#top_line_div{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 1px;
+	background-color: #31231d;
+	z-index: 100000;
+}
+/*header start css*/
+header{
+	height: 70px;
+	background-color: #463c37;
+	position: relative;
+	width: 100%;
+}
+header #logo_tagline{
+  position: absolute;
+	height: 70px;
+	width: 70px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+}
+header #tagline{
+  left: 70px;
+  top: -3px;
+  position: absolute;
+}
+header #tagline h1{
+	width: 410px;
+	font-size: 3.0rem;
+	position: absolute;
+	margin: 0;
+	padding: 10px;
+	transition: all 1s ease-in-out;
+}
+/*end of header CSS mobile*/
+
+/*special thing to make header stay at the top*/
+body{
+	background-color: rgba(138, 34, 61, 1);
+}
+#content #slideshow_gallery{
+	margin-top: 70px;
+}
+#content{
+  margin-top: 70px;
+}
+body header{
+	position: fixed;
+	z-index: 10000;
+	margin-top: -70px;
+	background-color: rgba(138, 34, 61, 0.7);
+}
+/*end of special thing*/
+
+/*hamburger menu*/
+#menu{
+  display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 5000000;
+}
+#menu a#menulink{
+  width: 40px;
+	height: 40px;
+	display: block;
+	color: #fff;
+	padding: 5px 4px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	position: absolute;
+	right: 0px;
+}
+/*hamburger menu animation start*/
+div.bar1, div.bar2, div.bar3{
+  width: 100%;
+	height: 5px;
+	background-color: #fff;
+	margin: 6px 0;
+	display: block;
+	opacity: 1;
+	transform: translate(0) rotate(0deg);
+	transition: all .4s ease-in-out;
+}
+#menu:hover a#menulink .bar1{
+  transform: translateY(8px) rotate(-45deg);
+}
+#menu:hover a#menulink .bar2{
+  opacity: 0;
+}
+#menu:hover a#menulink .bar3{
+  transform: translateY(-8px) rotate(45deg);
+}
+/*start of nav style css mobile*/
+nav{
+  position: relative;
+}
+nav ul#navlist{
+	margin: 0;
+	width: 200px;
+	background-color: #AD4662;
+	padding: 4px;
+
+	position: absolute;
+	top: 57px;
+	right: -10px;
+	opacity: 0;
+	transform: translateX(200px);
+	transition: all .4s ease-in-out;
+}
+nav ul#navlist li a{
+	display: block;
+	text-decoration: none;
+	height: 35px;
+	background: #8A223E;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 13px;
+  text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 3px;
+	font-size: 1.7rem;
+}
+nav ul#navlist li {
+list-style-type: none;
+}
+/*end of mobile nav css style design*/
+
+/*CSS for nav to work*CSS to make nav appear*/
+nav #menu:hover ul#navlist{
+	opacity: 1;
+	transform: translateX(0px);
+}
+/*end of nav css to make nav appear*/
+
+/*end of the nav*/
+
+
+
+/*start of wrapper*/
+#wrapper{
+  background-color: #f9f9f9;
+}
+/*end of Wrapper*/
+
+
+/*fotter startsssss*/
+footer{
+  display: block;
+	clear: both;
+}
+/*Start footer*/
+footer{
+  color: #fff;
+	clear: both;
+}
+footer #credits{
+  padding: 5px 0;
+  min-height: 10px;
+	background-color: #8A223E;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+/*division*/
+footer #bottom_div{
+  height: 4px;
+  background-color: #AD4662;
+}
+
+/*reviews*/
+footer #reviews_footer{
+  position: absolute;
+
+}
+footer #reviews_footer h3{
+  margin: 0;
+	margin-bottom: 3px;
+	display: block;
+} 
+footer #reviews_footer p{
+  margin: 0;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	padding: 0;
+	display: block;
+}
+
+footer #footer_items{
+  padding: 5px 0;
+  min-height: 105px;
+	background-color: #252525;
+}
+footer #inside_items{
+  margin: 0 auto;
+  width: 100%;
+	position: relative;
+}
+footer #logo_bottom{
+  display: none;
+}
+ footer #copyright{
+  padding: 5px 0;
+  min-height: 2px;
+	background-color: #1c1c1c;
+	text-align: center;
+	width: 100%;
+}
+footer #credits #contact_sec a{ 
+  text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	border: none;
+	display: block;
+	padding: 5px 8px;
+}
+
+#socialmedia{
+  position: absolute;
+	right: 0px;
+	top: 40px;
+}
+#socialmedia div{
+  margin: 5px;
+	display: inline-block;
+}
+#socialmedia div a{
+  display: inline-block;
+	background-position: center;
+	width: 25px;
+	height: 25px;
+}
+#socialmedia #sm_fb a{
+  background-image: url(../images/facebook.svg);
+	background-repeat: no-repeat;
+}
+#socialmedia #sm_tw a{
+  background-image: url(../images/twitter.svg);
+	background-repeat: no-repeat;
+}
+#socialmedia #sm_ig a{
+  background-image: url(../images/instagram.svg);
+	background-repeat: no-repeat;
+}
+/*end footer*/
+
+
+
+/*media query for grandma cooks text*/
+@media screen and (max-width: 569px){
+  header #tagline h1{
+		width: 410px;
+		font-size: 2.5rem;
+		position: absolute;
+		margin: 0;
+		padding: 10px;
+		transition: all 1s ease-in-out;
+	}
+}/*query ends for grandma cooks text*/
+/*another query for the text*/
+@media screen and (max-width: 500px){
+  header #tagline h1{
+		width: 280px;
+		font-size: 2rem;
+		position: absolute;
+		transition: all 1s ease-in-out;
+	}
+	header #tagline{
+    top: 8px;
+  }
+	#slideshow_gallery figure figcaption{
+	  font-size: 1.4rem;
+	}
+}/*end of second break point*/
+/*another query for the text*/
+@media screen and (max-width: 400px){
+  header #tagline h1{
+		width: 200px;
+		font-size: 1.2rem;
+		position: absolute;
+		transition: all 1s ease-in-out;
+	}
+	header #tagline{
+    top: 8px;
+  }
+	#slideshow_gallery figure figcaption{
+	  font-size: 1.2rem;
+	}
+}/*end of third break point*/
+/*another query for the text*/
+@media screen and (max-width: 350px){
+  body {
+	  background-color: rgba(70, 60, 55, 1);
+	}
+  header #tagline h1{
+		width: 120px;
+		font-size: 1.3rem;
+		position: absolute;
+		transition: all 1s ease-in-out;
+	}
+	header #tagline{
+  top: 3px;
+}
+  #slideshow_gallery figure figcaption{
+    font-size: 1rem;
+	}
+	#content #slideshow_gallery{
+	  margin-top: 70px;
+	}
+	body header{
+	  position: fixed;
+	  z-index: 10000;
+		margin-top: -70px;
+		background-color: rgba(138, 34, 61, 0.7);
+	}
+}
+/*end of forth and final break point*/
+
+
+
+
+/*CSS for HOME PAGE*/
+/*home CSS START !!!!!!!!!!!!!!!!!!!*/
+/*section and h2 css start*/
+#home #wrapper h2, #home #wrapper h3{
+  padding: 10px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.ft_posts{
+  margin: 0 5px 10px 5px;
+  position: relative;
+	text-align: center;
+	border: 2px solid #FFF;
+	padding: 8px;
+	height: 100%;
+}
+.img{
+  top: 20px;
+}
+.img div{
+  margin: 5px;
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	border-radius: 25px;
+	border: 1px solid #000;
+	overflow: hidden;
+}
+.img div a {
+	display: block;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+}
+.img #post_img1 a {
+  background-image: url(../images/post_img1.jpg);
+  background-repeat: no-repeat;
+}
+.img #post_img2 a {
+  background-image: url(../images/post_img2.jpg);
+  background-repeat: no-repeat;
+}
+.img #post_img3 a {
+  background-image: url(../images/post_img3.jpg);
+  background-repeat: no-repeat;
+}
+
+.post_link a{
+	bottom: 0;
+  color: #f9f9f9;
+  display: inline-block;
+	margin-bottom: 5%;
+  padding: 10px 15px;
+	background: #8a223d;
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 120px;
+}
+/*section and h2 css ends*/
+
+/*start of slide show*/
+figure{
+  font-weight: 100;
+	background-color: #cecece;
+}
+#slideshow_gallery{
+  height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+figure#slider{
+  font-size: 0;
+  position: relative;
+	width: 500%;
+	animation: 20s slideit infinite;
+}
+figure#slider figure{
+  margin: 0;
+	width: 20%;
+	height: auto;
+	display: inline-block;
+	position: inherit;
+}
+#slideshow_gallery #slider img{
+  width: 100%;
+	height: auto;
+  padding: 0;
+}
+#slideshow_gallery figure{
+  margin: 0;
+}
+figure figcaption{
+  position: absolute;
+	right: 0;
+	left: 00;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	width: 100%;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	overflow: hidden;
+}
+/*End of slide show*/
+/*End of CSS HOME PAGE*/
+
+/*headers*/
+#wrapper h2, #wrapper h3{
+  color: #2b2b2b;
+  padding: 10px;
+	padding-top: 15px;
+	padding-bottom: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+/*headers*/
+/*Order online button call to action*/
+#order_online {
+	position: fixed;
+	right: 0;
+	top: 79px;
+	text-align: center;
+	display: inline-block;
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-top: 1px;
+	z-index: 1000;
+}
+#order_online a {
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #252525;
+}
+/*call to action end*/
+
+/*form on contact us page start*/
+body#contact_us #contact_info form{
+	color: #2b2b2b;
+	padding: 10px;
+	margin: 0 auto;
+	background-color: #fff;
+	min-height: 350px;
+	z-index: 10;
+	font-weight: 400;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+body#contact_us #contact_info fieldset{
+	border: none;
+	font-size: 1.2rem;
+}
+body#contact_us #contact_info legend{
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+body#contact_us #contact_info #form label{
+	display: block;
+	float: left;
+	width: 170px;
+}
+body#contact_us #contact_info label.beforeit:after{
+  content: "*";
+	font-size: 150%;
+	color: #a44;
+	font-weight: 700;
+}
+body#contact_us #contact_info input[type="submit"],
+body#contact_us #contact_info input[type="reset"]{
+	background-color: #f9f9f9;
+	font-size: 1.2rem;
+	height: 50px;
+	width: 150px;
+	border-radius: 10px;
+	border: 2px solid #5f6a70;
+	text-transform: uppercase
+}
+
+body#contact_us #contact_info input[type="submit"]:hover,
+body#contact_us #contact_info input[type="reset"]:hover{
+	background-color: #ededed;
+}
+body#contact_us #contact_info #content{
+  padding-bottom: 40px;
+}
+body#contact_us  #contact_us #form p{
+  display: inline-block;
+	width: 100%;
+}
+body#contact_us  #contact_info input, textarea{
+	background-color: #f9f9f9;
+	border: 1px solid #d3e5e9;
+	border-radius: 5px;
+	height: 20px;
+	width: 90%;
+	padding: 5px;
+	text-transform: uppercase;
+}
+body#contact_us textarea{
+  width: 200px;
+	height: 100px;
+}
+body#contact_us input{
+  width: 100%;
+}
+@media screen and (max-width: 350px){
+  body#contact_us #content h2{
+	  padding-top: 50px;
+	}
+}
+/*form on contact us page end*/
+
+/*about us page CSS Start*/
+#about_us div#content p{
+  width: 96%;
+	min-height: 100px;
+	padding: 10px;
+	padding-bottom: 50px;
+	padding-top: 0;
+	margin: 0;
+	font-size: 1.2rem;
+	font-weight: 400;
+	padding-right: 0;
+}
+#about_us img#hq_img{
+  float: right;
+	border: 1px solid #000;
+	border-radius: 20px;
+	overflow: hidden;
+	margin: 20px;
+	margin-right: 5px;
+	width: 35%;
+	height: 35%;
+}
+.team_member img{
+  float: left;
+	border: 1px solid #000;
+	border-radius: 20px;
+	overflow: hidden;
+	width: 25%;
+	height: 25%;
+	margin: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.team_member img#wd{
+  float: right;
+}
+#about_us .team_member p{
+  width: 90%;
+}
+#about_us #clear{
+  clear: both;
+}
+/*about us page CSS end*/
+
+/*start of review page*/
+#review_content{
+  width: 100%;
+	padding-left: 20px;
+}
+div.review_item{
+  padding: 10px;
+  width: 90%;
+	margin: 0 auto;
+	height: 300px;
+	float: left;
+	margin-right: 10px;
+}
+.review_item img{
+  float: left;
+	border: 1px solid #000;
+	border-radius: 50px;
+	overflow: hidden;
+	margin-right: 5px;
+}
+.review_item span.quote:after,
+.review_item span.quote:before{
+  content: '"';
+}
+.clearfix {
+    clear: both;
+}
+@media screen and (max-width: 430px){
+  div.review_item{
+    width: 86%;
+		height: 200px;
+		margin-bottom: 20px;
+	}
+}
+/*end of review page*/
+
+/*services page starts - our menu*/
+#main_tables{
+  width: 100%;
+	height: auto;
+}
+table{
+  margin: 0 auto;
+	width: 90%;
+	background: #f9f9f9;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
+td a{
+	color: #f9f9f9;
+	margin-bottom: 5%;
+	padding: 10px 13px;
+	background: #8a223d;
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 110px;
+}
+td a:hover {
+	color: #ccc;
+	background-color: #736357;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+tr{
+  margin: 2px;
+}
+th{
+  text-transform: uppercase;
+	font-size: 1.5rem;
+	background-color: #3d3d3d;
+	height: 60px;
+	color: #fff;
+	padding: 0px;
+	border-radius: 10px;
+}
+td{
+	font-weight: 400;
+	padding: 10px 10px 5px 10px;
+}
+th, td{width: 300px;}
+#main_tables caption{
+  margin: 20px 0 5px 0;
+	font-weight: 700;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: #2b2b2b;
+}
+#main_tables table#meat_lovers caption{
+  margin-top: 0px;
+}
+table img{
+	border-radius: 25px;
+	border: 1px solid #000;
+	overflow: hidden;
+}
+@media screen and (max-width: 500px){
+  #content td a{
+    width: 86%;
+		height: 200px;
+		font-size: .7rem;
+	}
+}
+
+/* this is for the login btns*/
+#menu #menu-reg-log {
+    padding: 5px;
+    margin: 0;
+    background-color: #4d4d4d;
+    display: inline-block;
+    position: absolute;
+	top: -10px;
+    right: 60px;
+}
+
+#menu #menu-reg-log li {
+	font-size: 15px;
+	list-style-type: none;
+	padding: 2px;
+}
+#menu-reg-log nav ul li a {
+    padding: 3px 8px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    display: block;
+    padding: 3px 14px;
+	transition: all .3s ease-in-out;
+	border: 1px #f8f8f8 solid;
+}
+
+/*LOGIN FORM!!!*/
+form#login-form{
+	max-width: 400px;
+	padding: 30px 75px;
+	margin: 0 auto;
+  }
+  #login-form input#username,
+  #login-form input#password{
+	text-transform: uppercase;
+	border: 1px solid #cecece;
+	border-radius: 25px;
+	margin: 0px 0px 5px 0px;
+	padding: 9px 5px;
+	box-sizing: border-box;
+	width: 100%;
+  }
+  #login-btn{
+	margin: 0 auto;
+	background-color: #f9f9f9;
+	font-size: 1.2rem;
+	height: 50px;
+	width: 170px;
+	border-radius: 25px;
+	border: 2px solid #5f6a70;
+	text-transform: uppercase;
+	display: block;
+  }
+  #login-form legend{
+	display: block;
+	margin: 0 auto;
+	text-transform: uppercase;
+  }
+  #login-form fieldset{
+	border-radius: 25px;
+	border: 1px solid #cecece;
+  }
+  #login-btn:hover {
+	background-color: #D57B93;
+	color: #f9f9f9;
+	border: 2px solid #D57B93;
+	border-radius: 25px;
+  }
+  #login-form p{
+	padding: 10px 10px;
+  }
+
+  /* MENU STUFF */
+  div.search {
+    position: relative;
+}
+
+#search_form input {
+    background-color: #f9f9f9;
+    border: 1px solid #d3e5e9;
+    border-radius: 5px;
+    height: 20px;
+    width: 160px;
+    padding: 5px;
+    margin: 0px 10px;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50);
+}
+
+.product button, #search_form button, #detail_product button, #confirm button {
+    color: #f9f9f9;
+    display: inline-block;
+    padding: 5px 15px;
+    background: #8A223E;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    width: 120px;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+}
+
+/*CSS for menu*/
+#category, #products_list{
+	float: left;
+  }
+  #category{
+	width: 30%;
+  }
+  #products_list{
+	width: 70%;
+  }
+  .product{
+	width: 50%;
+	float: left;
+	text-align: center;
+  }
+  .product img{
+	width: 250px;
+	border-radius: 25px;
+	overflow: hidden;
+  }
+  .product strong{
+	text-transform: uppercase;
+  }
+  .product p{
+	text-transform: capitalize;
+	margin-bottom: 5px;
+  }

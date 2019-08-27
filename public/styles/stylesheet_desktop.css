@@ -1,0 +1,717 @@
+/*
+|||||||||||||||||||||||||||||||||||||
+||       PHP Capstone Project      ||
+\\          Dino Cooks             //
+ \\         WDD - 2018            //
+  \\    Author: Diego Beltran    //
+   \\                           //
+   ||     (\(\         /)/)     ||
+   ||     (-.-)       (-.-)     ||
+   ||     o_(")(") (")(")_o     ||
+|||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||
+*/
+/*Style sheet for desktop*/
+
+/*slide show animation*/
+@-webkit-keyframes slideit{
+  0% { left: 0; }
+	16.66% { left: 0; }
+	33.33% { left: -100% }
+	50% { left: -100% }
+	66.66% { left: -100% }
+	83.33% { left: -200%; }
+	100% { left: -200%; }
+}
+@keyframes slideit{
+  0% { left: 0; }
+	16.66% { left: 0; }
+	33.33% { left: -100% }
+	50% { left: -100% }
+	66.66% { left: -100% }
+	83.33% { left: -200%; }
+	100% { left: -200%; }
+}
+
+/*logo svg css*/
+svg{
+	fill: #fff;
+	stroke: #000;
+	stroke-width: 1px;
+	width: 150px;
+}
+
+div{
+  box-sizing: border-box;
+}
+body{
+  box-sizing: border-box;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	background-color: #f9f9f9;
+	height: auto;
+}
+#wrapper{
+	margin: 0 auto;
+	background-color: #f9f9f9;
+	width: 960px;
+}
+/*header background css*/
+#top_line_div{
+  position: absolute;
+	width: 100%;
+	height: 4px;
+	background-color: #AD4662;
+	z-index: 1000;
+}
+#bg_header{
+  position: absolute;
+	width: 100%;
+	height: 150px;
+	background-color: #8a223d;
+}/*if the height of header changes change height to bg_header*/
+/*End of header bg css*/
+/*header css*/
+header{
+	height: 150px;
+	background-color: #8a223d;
+	position: relative;
+	width: 100%;
+}
+/*header logo and tagline*/
+header #logo_tagline{
+  position: absolute;
+	left: -5px;
+	top: 5px;
+	height: 140px;
+	width: 150px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: bold;
+}
+header #tagline{
+  left: 150px;
+  top: 50px;
+  position: absolute;
+	/*text-shadow: 1px 2px rgba(0,0,0,0.5);*/
+	transition: all .3s ease-in-out;
+}
+header #tagline h1{
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+	font-weight: 700;
+  padding-left: 20px;
+}
+/*end header logo and tagline */
+/*nav menu start*/
+body#home nav ul li a.pg_one,
+body#services nav ul li a.pg_two,
+body#about_us nav ul li a.pg_three,
+body#contact_us nav ul li a.pg_four,
+body#reviews nav ul li a.pg_five{
+  text-decoration: underline;
+	background-color: #D57B93;
+}
+nav{
+	min-height: 45px;
+	position: relative;
+	top: 100px;
+	white-space: nowrap;
+}
+nav ul{
+  margin: 0;
+	padding: 0;
+	padding-left: 324px;
+	list-style: none;
+	transition: all .3s ease-in-out;
+}
+nav ul li{
+  font-size: 21px;
+  display: inline-block;
+	margin-right: 1px;
+}
+nav ul li a{
+  text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	border: none;
+	display: block;
+	padding: 10px 15px;
+	transition: all .3s ease-in-out;
+}
+nav ul li a:hover{
+  color: #f8f8f8;
+	background-color: #D57B93;
+	/*text-shadow: 1px 1px 2px rgba(0,0,0,0.5);*/
+}
+/*end of nav menu*/
+
+#content{
+  width: 100%;
+}
+
+/*Start footer*/
+footer{
+  color: #fff;
+	clear: both;
+  margin-top: 2%;
+}
+footer #credits{
+  padding: 5px 0;
+  min-height: 10px;
+	background-color: #8A223E;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+footer #credits #contact_sec a{
+  text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	border: none;
+	display: block;
+}
+/*division*/
+footer #bottom_div{
+  height: 4px;
+  background-color: #AD4662;
+}
+
+/*reviews*/
+footer #reviews_footer{
+  position: absolute;
+
+}
+footer #reviews_footer h3{
+  margin: 0;
+	margin-bottom: 3px;
+	display: block;
+}
+footer #reviews_footer p{
+  margin: 0;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	padding: 0;
+	display: block;
+}
+
+footer #footer_items{
+  padding: 5px 0;
+  min-height: 50px;
+	background-color: #252525;
+}
+footer #inside_items{
+  margin: 0 auto;
+  width: 960px;
+	position: relative;
+}
+footer #logo_bottom{
+  padding: 5px 0;
+  height: 100px;
+	width: 100px;
+	margin: 0 auto;
+}
+#logo_bottom svg{
+	fill: #fff;
+	stroke: #000;
+	stroke-width: 1px;
+	width: 100px;
+}
+ footer #copyright{
+  padding: 5px 0;
+  min-height: 2px;
+	background-color: #1c1c1c;
+	text-align: center;
+	width: 100%;
+}
+#socialmedia{
+  position: absolute;
+	right: 0px;
+	top: 40px;
+}
+#socialmedia div{
+  margin: 5px;
+	display: inline-block;
+}
+#socialmedia div a{
+  display: inline-block;
+	background-position: center;
+	width: 25px;
+	height: 25px;
+}
+
+#socialmedia #sm_fb a{
+  background-image: url(../images/facebook.svg);
+	background-repeat: no-repeat;
+}
+#socialmedia #sm_tw a{
+  background-image: url(../images/twitter.svg);
+	background-repeat: no-repeat;
+}
+#socialmedia #sm_ig a{
+  background-image: url(../images/instagram.svg);
+	background-repeat: no-repeat;
+}
+
+/*end footer*/
+
+
+/*Media Query responsive*/
+
+@media screen and (max-width: 975px){
+  body{
+	  margin: 0;
+	}
+	#wrapper{
+	  width: 100%;
+	}
+	nav ul{
+	  padding-left: 280px;
+	}
+	footer{
+	  width: 100%;
+	}
+	footer #inside_items{
+	  width: 100%;
+	}
+	div#slideshow{
+	  max-height: 260px;
+	}
+}
+
+@media screen and (max-width: 965px){
+  nav ul{
+	  padding-left: 250px;
+	}
+	header nav ul li a{
+	  padding: 8px 12px;
+	}
+	nav ul li {
+    margin-right: 0;
+}
+	footer{
+	  width: 100%;
+	}
+	footer #inside_items{
+	  width: 100%;
+	}
+}
+
+/*last one before going to mobile css*/
+@media screen and (max-width: 901px){
+  header #tagline{
+  top: 15px;
+	}
+	nav ul{
+	  padding-left: 160px;
+	}
+	header nav ul li a{
+	  padding: 6px 10px;
+	}
+}
+
+/*CSS for HOME PAGE*/
+/*start of slide show*/
+figure{
+  font-weight: 100;
+	background-color: #cecece;
+}
+#slideshow_gallery{
+  height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+figure#slider{
+  font-size: 0;
+  position: relative;
+	width: 500%;
+	-webkit-animation: 20s slideit infinite;
+	animation: 20s slideit infinite;
+}
+figure#slider figure{
+  margin: 0;
+	width: 20%;
+	height: auto;
+	display: inline-block;
+	position: inherit;
+}
+
+
+#slideshow_gallery #slider img{
+  width: 100%;
+	height: auto;
+  padding: 0;
+}
+#slideshow_gallery figure{
+  margin: 0;
+}
+
+figure figcaption{
+  position: absolute;
+	right: 0;
+	left: 00;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	width: 100%;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	overflow: hidden;
+}
+/*End of slide show*/
+
+/*section*/
+#ft_section_content{
+  height: 440px;
+	width: 100%;
+}
+#ft_section_container{
+  width: 100%;
+	height: 100%;
+	padding: 15px;
+}
+#ft_section_posts{
+  margin-left: -3%;
+	height: 100%;
+}
+.ft_posts{
+  position: relative;
+  float: left;
+	margin-left: 3%;
+	width: 30.33%;
+	text-align: center;
+	/*border: 2px solid #FFF;*/
+	padding: 8px;
+	height: 100%;
+}
+h2#page_h2_main{
+  padding-left: 7px;
+}
+#wrapper h2{
+  font-size: 45px;
+	font-weight: 700;
+}
+#wrapper h2, #wrapper h3{
+  color: #2b2b2b;
+  padding: 10px;
+	padding-top: 15px;
+	padding-bottom: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.img{
+  top: 20px;
+}
+.img div{
+  margin: 5px;
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	border-radius: 25px;
+	/*border: 1px solid #000;*/
+	overflow: hidden;
+}
+.img div a {
+	display: block;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+}
+.img #post_img1 a {
+  background-image: url(../images/post_img1.jpg);
+  background-repeat: no-repeat;
+}
+.img #post_img2 a {
+  background-image: url(../images/post_img2.jpg);
+  background-repeat: no-repeat;
+}
+.img #post_img3 a {
+  background-image: url(../images/post_img3.jpg);
+  background-repeat: no-repeat;
+}
+.post_link{
+  height: 0;
+  width: 0;
+}
+.post_link a{
+  position: absolute;
+	bottom: 0;
+  color: #f9f9f9;
+  display: inline-block;
+	margin-bottom: 5%;
+  padding: 10px 15px;
+	background: #8A223E;
+	text-decoration: none;
+  border-radius: 25px;
+	text-align: center;
+	line-height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	right: 0;
+	left: 0;
+	width: 120px;
+}
+.post_link a:hover{
+  color: #ccc;
+	background-color: #D57B93;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+/*feature items section end*/
+@media screen and (max-width: 840px){
+  #ft_section_posts .ft_posts .post_description{
+		font-size: .9rem;
+  }
+}
+.clearfix{
+  clear: both;
+}
+.post_description{
+  margin-top: 20px;
+}
+/*End of CSS HOME PAGE*/
+
+
+/*about us page CSS Start*/
+#about_us div#content h2{
+
+}
+#about_us div#content p{
+  width: 97%;
+	min-height: 150px;
+	padding: 10px;
+	padding-bottom: 50px;
+	padding-top: 0;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 400;
+}
+#about_us img#hq_img{
+  float: right;
+	border: 1px solid #000;
+	border-radius: 20px;
+	overflow: hidden;
+	margin: 20px;
+	margin-right: 0;
+	width: 30%;
+	height: 30%;
+}
+.team_member img{
+  float: left;
+	border: 1px solid #000;
+	border-radius: 20px;
+	overflow: hidden;
+	width: 15%;
+	height: 15%;
+	margin: 20px;
+	margin-left: 5px;
+}
+.team_member img#wd{
+  float: right;
+}
+#about_us .team_member p{
+  width: 90%;
+}
+#about_us #clear{
+  clear: both;
+}
+/*about us page CSS end*/
+
+
+/*services page starts - our menu*/
+#main_tables{
+  width: 100%;
+	height: auto;
+}
+table{
+  margin: 0 auto;
+	width: 90%;
+	background: #f9f9f9;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
+td a{
+	color: #f9f9f9;
+	margin-bottom: 5%;
+	padding: 10px 15px;
+	background: #8A223E;
+  border-radius: 25px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 120px;
+}
+td a:hover {
+	color: #ccc;
+	background-color: #D57B93;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+tr{
+  margin: 2px;
+}
+th{
+  text-transform: uppercase;
+	font-size: 1.5rem;
+	background-color: #3d3d3d;
+	height: 60px;
+	color: #fff;
+	padding: 0px;
+	border-radius: 10px;
+}
+td{
+	font-weight: 400;
+	padding: 10px 10px 5px 10px;
+}
+th, td{width: 300px;}
+#main_tables caption{
+  margin: 20px 0 5px 0;
+	font-weight: 700;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: #2b2b2b;
+}
+#main_tables table#meat_lovers caption{
+  margin-top: 0px;
+}
+table img{
+	border-radius: 25px;
+	/*border: 1px solid #000;*/
+	overflow: hidden;
+}
+/*order online start*/
+#content{
+  position: relative;
+}
+#order_online{
+  position: absolute;
+	right: 0;
+	top: 9px;
+	text-align: center;
+  display: inline-block;
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-top: 1px;
+}
+#order_online a{
+  padding: 10px 15px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #252525;
+}
+#order_online a:hover {
+    color: #f9f9f9;
+    background-color: #4d4d4d;
+		color: #efefef;
+    text-shadow: 0 0 3px rgba(0,0,0,0.8);
+		text-decoration: underline;
+}
+/*order online end*/
+/*end of services our menu*/
+
+/*start of review page*/
+#review_content{
+  width: 100%;
+	padding-left: 20px;
+}
+div.review_item{
+  padding: 10px;
+  width: 300px;
+	height: 300px;
+	float: left;
+}
+.review_item img{
+  float: left;
+	border: 1px solid #000;
+	border-radius: 50px;
+	overflow: hidden;
+	margin-right: 5px;
+}
+.review_item span.quote:after,
+.review_item span.quote:before{
+  content: '"';
+}
+
+/*end of review page*/
+
+
+/*THIS IS NEW!!!*/
+/*register and login css make it pretty*/
+#menu #menu-reg-log{
+  padding: 0;
+  margin: 0;
+  background-color: #4d4d4d;
+  display: inline-block;
+  position: absolute;
+  top: -96px;
+  right: 0px;
+}
+#menu #menu-reg-log li{
+  font-size: 14px;
+}
+#menu-reg-log ul li a{
+  padding: 8px 10px;
+  margin: 0px;
+}
+
+/*LOGIN FORM!!!*/
+form#login-form{
+  max-width: 400px;
+  padding: 30px 75px;
+  margin: 0 auto;
+}
+#login-form input#username,
+#login-form input#password{
+  text-transform: uppercase;
+  border: 1px solid #cecece;
+  border-radius: 25px;
+  margin: 0px 0px 5px 0px;
+  padding: 9px 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+#login-btn{
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  font-size: 1.2rem;
+  height: 50px;
+  width: 170px;
+  border-radius: 25px;
+  border: 2px solid #5f6a70;
+  text-transform: uppercase;
+  display: block;
+}
+#login-form legend{
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+#login-form fieldset{
+  border-radius: 25px;
+  border: 1px solid #cecece;
+}
+#login-btn:hover {
+  background-color: #D57B93;
+  color: #f9f9f9;
+  border: 2px solid #D57B93;
+  border-radius: 25px;
+}
+#login-form p{
+  padding: 10px 10px;
+}
+/*CSS FOR PROFILE!!*/
+body#profile #content p{
+  color: #2b2b2b;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  margin: 0;
+  font-size: 1.2rem;
+}

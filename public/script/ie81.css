@@ -1,0 +1,29 @@
+/* Stylesheet to fix IE8 issues */
+
+header,
+footer,
+nav,
+main,
+section,
+aside{
+  display: block;
+}
+
+#wrapper #box{
+  background-color: #966;
+}
+header:before{
+  display: block;
+  background-color: #999;
+  border: 2px solid #000;
+  font-size: 28px;
+  font-weight: bold;
+  content: 'Sorry, your browser is unsupported!';
+  color: #600;
+}
+#wrapper nav ul#services_submenu{
+  display: none;
+}
+#wrapper li.haspopup:hover ul#services_submenu{
+ display: block;
+}
